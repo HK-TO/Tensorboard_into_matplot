@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 from tensorboard.backend.event_processing.event_accumulator import EventAccumulator
 
 
-
-
 #@title TensorBoardからJsonfileに変換する関数
 def TensorboardtoJson(path, output_json_name):
   event_acc = EventAccumulator(path, size_guidance={'scalars': 0})
