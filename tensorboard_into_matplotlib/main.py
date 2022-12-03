@@ -10,7 +10,7 @@ from tensorboard.backend.event_processing.event_accumulator import EventAccumula
 
 
 #@title TensorBoardからJsonfileに変換する関数
-def TensorboardtoJson(path, output_json_name):
+def tensorboard_to_json(path, output_json_name):
   event_acc = EventAccumulator(path, size_guidance={'scalars': 0})
   event_acc.Reload() # ログファイルのサイズによっては非常に時間がかかる
   #すべてのscalarデータを取得しそのjsonファイルを取得する
@@ -18,12 +18,9 @@ def TensorboardtoJson(path, output_json_name):
   for tag in event_acc.Tags()['scalars']:
       events = event_acc.Scalars(tag)
       scalars[tag] = [event.value for event in events]
+
   with open(output_json_name, 'w') as fout:
       json.dump(scalars, fout)
-
-path =  "../files/asymmetric_ff_asac_InvertedPendulum-v4"# @param {typee:"string"}
-output_json_file_name = '../outputs/test.json' #@param {type:"string"}
-TensorboardtoJson(path, output_json_file_name)
 
 
 #@title 複数のTensorBoardからそれぞれのJsonfileに変換する関数
