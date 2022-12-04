@@ -5,6 +5,7 @@ class TestTensorboardIntoMatplotlib(unittest.TestCase):
 
     def test_open(self):
 
-        path =  "tests/files/asymmetric_ff_asac_InvertedPendulum-v4"# @param {typee:"string"}
-        output_json_file_name = 'tests/outputs/test.json' #@param {type:"string"}
-        tensorboard_to_json(path, output_json_file_name)
+        input_path =  "tests/files/asymmetric_ff_asac_InvertedPendulum-v4"# @param {typee:"string"}
+        output_path =  "tests/outputs"# @param {typee:"string"}
+        output_file_name = 'test.json' #@param {type:"string"}
+        tensorboard_to_json(input_path, output_path, output_file_name)
