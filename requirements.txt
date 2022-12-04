@@ -41,7 +41,6 @@ tensorboard==2.10.1
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
 tensorflow-estimator==2.10.0
-tensorflow-macos==2.10.0
 tensorflow-tensorboard==1.5.1
 termcolor==2.1.1
 typing_extensions==4.4.0
