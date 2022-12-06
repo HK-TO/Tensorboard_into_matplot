@@ -10,6 +10,9 @@ https://github.com/tensorflow/tensorboard
 Tensorboard のログファイルからスカラーや画像を取り出して保存する  
 https://qiita.com/f0o0o/items/587db345d64ae0feca73
 
+tensorflowのscalar_summaryのログを展開する
+https://qiita.com/kzmssk/items/3b08f9cd400cb3102c1b
+
 
 ### Comparison of frameworks
 Pythonでユニットテストコードを描くためのフレームワーク比較  
