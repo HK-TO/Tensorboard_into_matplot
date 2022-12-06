@@ -4,7 +4,7 @@ Convert tensorboard logs into a matplotlib's figure.
 # 参考にするサイト
 
 ## Tensorboard
-Original github
+Original github//
 https://github.com/tensorflow/tensorboard
 
 Tensorboard のログファイルからスカラーや画像を取り出して保存する
